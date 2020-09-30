@@ -1,9 +1,10 @@
-var sueldo = 100;
+var sueldo = -1;
 console.log(`El sueldo es de = ${sueldo}`)
 
  while (sueldo < 1500){
     if (sueldo <= 0) {
         console.log('No es un sueldo valido')
+        return;
     }  else if (sueldo >= 0 && sueldo <= 1000) {
         sueldo += (sueldo * .15);
         console.log(`Nuevo sueldo = ${sueldo}`);
